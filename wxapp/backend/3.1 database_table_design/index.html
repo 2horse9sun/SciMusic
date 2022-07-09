@@ -17,7 +17,7 @@
         <link rel="canonical" href="https://2horse9sun.github.io/SciMusic/wxapp/backend/3.1%20database_table_design/">
       
       <link rel="icon" href="../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
 	<meta name="format-detection" content="telephone=no">
 
@@ -2297,7 +2297,6 @@
 <span class="linenos" data-linenos="10 "></span>| user               |
 <span class="linenos" data-linenos="11 "></span>+--------------------+
 </code></pre></div>
-
 <p><code>user</code>表记录使用微信登陆过小程序的用户，便于展示用户信息。</p>
 <p><code>open_id</code>为微信用户的唯一标识，由微信官方提供，设置为主键。用户的<code>nickname</code>和<code>avatar_url</code>也由微信官方提供。</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>mysql&gt; describe user;
@@ -2312,7 +2311,6 @@
 <span class="linenos" data-linenos="10 "></span>| is_deleted  | int(11)      | NO   |     | NULL    |                             |
 <span class="linenos" data-linenos="11 "></span>+-------------+--------------+------+-----+---------+-----------------------------+
 </code></pre></div>
-
 <p><code>music</code>表记录生成的音乐信息。</p>
 <p><code>id</code>为音乐的唯一标识，设置为主键。<code>user_id</code>是该音乐创作者的<code>open_id</code>。</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>mysql&gt; describe music;
@@ -2327,7 +2325,6 @@
 <span class="linenos" data-linenos="10 "></span>| update_time | datetime     | NO   |     | NULL    | on update CURRENT_TIMESTAMP |
 <span class="linenos" data-linenos="11 "></span>+-------------+--------------+------+-----+---------+-----------------------------+
 </code></pre></div>
-
 <blockquote>
 <p>Author: <a href="https://github.com/2horse9sun">冯旭</a>    </p>
 <p>Create Time: 2022-02-18    </p>
@@ -2420,7 +2417,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../../js/katex.js"></script>
       
